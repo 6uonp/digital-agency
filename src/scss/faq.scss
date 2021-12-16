@@ -1,0 +1,182 @@
+@use 'default';
+@import './share.scss';
+
+@keyframes animation_grow {
+  from {
+    height: 40px;
+  }
+  85% {
+    height: 132px;
+  }
+  to {
+    height: 128px;
+  }
+}
+
+@keyframes animation_shrink {
+  from {
+    height: 128px;
+  }
+  85% {
+    height: 36px;
+  }
+  to {
+    height: 40px;
+  }
+}
+
+.isOpen {
+  border-width: 2px !important;
+  border-color: default.$primary-header-color !important;
+  // max-height: 300px !important;
+  .faq__item__para {
+    animation-name: animation_grow;
+    animation-duration: 0.3s;
+  }
+}
+.isClose {
+  .faq__item__para {
+    animation-name: animation_shrink;
+    animation-duration: 0.3s;
+  }
+}
+
+.faq {
+  @media (min-width: 1024px) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  @media (min-width: 1260px) {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+  @media (min-width: 1367px) {
+    padding-top: 70px;
+  }
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  .faq__wrapper {
+    @extend .wrapper;
+    .faq__title {
+      @extend .title;
+    }
+    .faq__item {
+      @media (min-width: 768px) {
+        gap: 20px;
+        padding-right: 35px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+      }
+      @media (min-width: 1024px) {
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        padding-right: 40px;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+      }
+      @media (min-width: 1260px) {
+        gap: 65px;
+        padding-right: 55px;
+      }
+      overflow: hidden;
+      border-bottom: 1px solid rgba(15, 33, 55, 0.3);
+      gap: 10px;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      text-align: start;
+      .faq__item__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        position: relative;
+        h4 {
+          @media (min-width: 768px) {
+            font-size: 20px;
+            padding-right: 0;
+          }
+          box-sizing: border-box;
+          margin: 0;
+          min-width: 0;
+          font-family: default.$font-secondary, sans-serif;
+          font-weight: 500;
+          color: default.$primary-header-color;
+          font-size: 16px;
+          line-height: 1.5;
+          letter-spacing: -0.5px;
+          padding-right: 40px;
+        }
+      }
+      .faq__item__para {
+        @media (min-width: 768px) {
+          font-size: 16px;
+        }
+        overflow: hidden;
+        line-height: 2;
+        margin: 0px;
+        font-size: 14px;
+        // max-height: 100%;
+        .faq__item__para__content {
+          @media (min-width: 768px) {
+            padding-top: 0;
+          }
+          padding-top: 5px;
+        }
+      }
+      span {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        svg {
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+          color: rgba(15, 33, 55, 0.3);
+        }
+      }
+    }
+    .faq__button {
+      @media (min-width: 768px) {
+        padding-top: 0;
+      }
+      box-sizing: border-box;
+      margin: 0;
+      min-width: 0;
+      padding-top: 15px;
+      text-align: center;
+
+      button {
+        box-sizing: border-box;
+        background-color: #ecf2f7;
+        color: #738295;
+        min-height: 50px;
+        padding: 10px 22px;
+        border: 0;
+        margin: 0;
+        min-width: 0;
+        appearance: none;
+        font-size: inherit;
+        text-align: center;
+        text-decoration: none;
+        font-family: default.$font-secondary, sans-serif;
+        font-weight: 700;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out 0s;
+        white-space: nowrap;
+        &:hover {
+          color: white;
+          background-color: #56bbd0;
+        }
+      }
+    }
+  }
+}

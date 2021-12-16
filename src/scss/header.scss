@@ -1,0 +1,101 @@
+@use 'default';
+@import './share.scss';
+
+.is-sticky {
+  background-color: white !important;
+  box-shadow: 0px 20px 50px rgb(59 90 136 / 5%) !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.header {
+  font-family: default.$font-secondary, sans-serif;
+  line-height: 1.5;
+  font-weight: normal;
+
+  .header__wrapper {
+    z-index: 100;
+    transform: translate3d(0px, 0px, 0px);
+  }
+  .header__content {
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 25px 0;
+    transition: all 0.3s ease-in-out 0s;
+    .header__content__container {
+      @media (min-width: 768px) {
+        max-width: 720px;
+      }
+      @media (min-width: 1024px) {
+        max-width: 970px;
+      }
+      @media (min-width: 1260px) {
+        max-width: 1140px;
+      }
+      @media (min-width: 1367px) {
+        max-width: 1260px;
+      }
+      @media (min-width: 1440px) {
+        max-width: 1366px;
+      }
+      box-sizing: border-box;
+      min-width: 0;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .header__content__container__logo {
+        @media (min-width: 768px) {
+          max-width: 185px;
+        }
+        @media (min-width: 1024px) {
+          margin-right: 30px;
+        }
+        @media (min-width: 1260px) {
+          margin-right: 60px;
+          max-width: none;
+        }
+        box-sizing: border-box;
+        margin: 0;
+        min-width: 0;
+        align-items: center;
+        cursor: pointer;
+        display: inline-flex;
+        svg {
+          @media (min-width: 640px) {
+            width: 100%;
+          }
+          height: auto;
+          width: 128px;
+        }
+      }
+      .header__content__container__nav {
+        @media (min-width: 1024px) {
+          display: flex;
+        }
+        display: none;
+        align-items: center;
+        flex-grow: 1;
+        a {
+          cursor: pointer;
+          display: flex;
+          font-weight: 400;
+          color: default.$primary-header-color;
+          padding: 0;
+          transition: all 0.3s ease-in-out 0s;
+        }
+        a + a {
+          margin-left: 35px;
+        }
+      }
+    }
+  }
+}
+.active {
+  color: #56bbd0 !important;
+}
