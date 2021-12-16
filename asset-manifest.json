@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/digital-agency/static/css/main.51cb7f63.chunk.css",
+    "main.js": "/digital-agency/static/js/main.c8a4ef43.chunk.js",
+    "main.js.map": "/digital-agency/static/js/main.c8a4ef43.chunk.js.map",
+    "runtime-main.js": "/digital-agency/static/js/runtime-main.33ab86ee.js",
+    "runtime-main.js.map": "/digital-agency/static/js/runtime-main.33ab86ee.js.map",
+    "static/js/2.8e23ca3d.chunk.js": "/digital-agency/static/js/2.8e23ca3d.chunk.js",
+    "static/js/2.8e23ca3d.chunk.js.map": "/digital-agency/static/js/2.8e23ca3d.chunk.js.map",
+    "static/js/3.76f6d9b8.chunk.js": "/digital-agency/static/js/3.76f6d9b8.chunk.js",
+    "static/js/3.76f6d9b8.chunk.js.map": "/digital-agency/static/js/3.76f6d9b8.chunk.js.map",
+    "index.html": "/digital-agency/index.html",
+    "static/css/main.51cb7f63.chunk.css.map": "/digital-agency/static/css/main.51cb7f63.chunk.css.map",
+    "static/js/2.8e23ca3d.chunk.js.LICENSE.txt": "/digital-agency/static/js/2.8e23ca3d.chunk.js.LICENSE.txt",
+    "static/media/arrowRightIcon.1c5f4856.svg": "/digital-agency/static/media/arrowRightIcon.1c5f4856.svg",
+    "static/media/article_1.7fb56ac6.png": "/digital-agency/static/media/article_1.7fb56ac6.png",
+    "static/media/article_2.a0276ab4.png": "/digital-agency/static/media/article_2.a0276ab4.png",
+    "static/media/article_3.30d497ec.png": "/digital-agency/static/media/article_3.30d497ec.png",
+    "static/media/article_4.036324e2.png": "/digital-agency/static/media/article_4.036324e2.png",
+    "static/media/banner.bfc551dd.png": "/digital-agency/static/media/banner.bfc551dd.png",
+    "static/media/chevronRightIcon.ebca2237.svg": "/digital-agency/static/media/chevronRightIcon.ebca2237.svg",
+    "static/media/clients.551107dc.png": "/digital-agency/static/media/clients.551107dc.png",
+    "static/media/home.scss": "/digital-agency/static/media/home.fcf1e81e.png",
+    "static/media/inValid.472fe5fc.svg": "/digital-agency/static/media/inValid.472fe5fc.svg",
+    "static/media/logo.bbaee363.svg": "/digital-agency/static/media/logo.bbaee363.svg",
+    "static/media/minusIcon.1dd8149d.svg": "/digital-agency/static/media/minusIcon.1dd8149d.svg",
+    "static/media/plusIcon.b59d981e.svg": "/digital-agency/static/media/plusIcon.b59d981e.svg",
+    "static/media/support.825b3f77.png": "/digital-agency/static/media/support.825b3f77.png",
+    "static/media/valid.ecb0d9e1.svg": "/digital-agency/static/media/valid.ecb0d9e1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33ab86ee.js",
+    "static/js/2.8e23ca3d.chunk.js",
+    "static/css/main.51cb7f63.chunk.css",
+    "static/js/main.c8a4ef43.chunk.js"
+  ]
+}
